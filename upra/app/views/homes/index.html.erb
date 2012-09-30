@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+
+-->
+</style>
+<link href="Css/Style_sheet.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="center" valign="top" class="top_bg">
+    <table width="907" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+      <td height="123" colspan="3" align="left" valign="middle">
+        <%= image_tag "logo.png", :size => "906x78", :border => "0" %>
+      </td>
+      </tr>
+      <tr>
+        <td height="61" colspan="3" valign="middle" style="background:url(/assets/menubg.png) no-repeat;height:61px;">
+      <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" id="menu">
+        <tr>
+        <td width="127" height="50" align="center"><%= link_to 'Home', '#' %></td>
+        <td width="2" align="center"><%= image_tag "sepr.png", :size => "1x30" %></td>
+        <td width="127" align="center"><%= link_to 'About us', about_us_homes_path %></td>
+        <td width="2" align="center"><%= image_tag "sepr.png", :size => "1x30" %></td>
+        <td width="127" align="center"><%= link_to 'Projects', projects_homes_path %></td>
+        <td width="2" align="center"><%= image_tag "sepr.png", :size => "1x30" %></td>
+        <td width="127" align="center"><a href="http://www.jagomumbairadio.com">Radio</a></td>
+        <td width="2" align="center"><%= image_tag "sepr.png", :size => "1x30" %></td>
+        <td width="127" align="center"><%= link_to 'News', news_path %></td>
+        <td width="2" align="center"><%= image_tag "sepr.png", :size => "1x30" %></td>
+        <td width="127" align="center"><a href="Donations.html">Donations</a></td>
+        <td width="2" align="center"><%= image_tag "sepr.png", :size => "1x30" %></td>
+        <td width="127" align="center"><%= link_to 'Contact us',  contact_us_homes_path %></td>
+        
+        </tr>
+      </table>
+
+      </td>
+       </tr>
+      <tr>
+      <td height="30" colspan="3">&nbsp;</td>
+      </tr>
+      <tr>
+      <td width="330px" align="center" >
+      <a href="#"><%= image_tag "donate_bt.png", :size => "195x60", :border => "0" %></a><br />
+      <div id="div_dnttyps" style="padding-top:08px;">
+            <%= image_tag "cards.png", :size => "314x26", :border => "0", :align => "middle", :usemap=>"#Map2" %>
+      </div>
+    </td>
+      <td width="18" rowspan="3">&nbsp;</td>
+      <td width="559" rowspan="2" align="left" valign="top" >
+         <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+          <td colspan="3" >
+           <span class="head_text" >Projects</span>
+           <div style="padding-top:5px;padding-bottom:10px">
+           <%= image_tag "hr.jpg", :size => "556x2"%> 
+            </div></td>
+          </tr>
+          <tr>
+          <td width="268"><%= link_to image_tag( "alm1.jpg", :size => "268x165, :border => 0"), '#'%></td>
+          <td width="23">&nbsp; </td>
+          <td width="268"><%= link_to image_tag( "fm.jpg", :size => "268x165, :border => 0"), '#'%></td>
+          </tr>
+          <tr>
+          <td height="23" colspan="3">&nbsp;</td>
+          </tr>
+          <tr>
+          <td><%= link_to image_tag( "upra.jpg", :size => "268x165", :border => "0"), '#' %></td>
+          <td>&nbsp;</td>
+          <td><%= link_to image_tag( "beti.jpg", :size => "268x165", :border => "0"), '#'%></td>
+          </tr>
+          </table>  
+        </td>
+      </tr>
+      <tr>
+      <td align="left" valign="top" style="padding-top:10px;">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="47"  class="leftboxtop" >
+                <span class="leftboxtext" >Our Misssion</span></td>
+              </tr>
+              <tr >
+                <td class="leftboxmid" >
+         <div id="left_imgbox"> <%= image_tag "img1.jpg", :size => "67x114", :align => "right"%></div>  
+         <div id="left_textbox"><%= Home.find_by_subject("Our Misssion").try(:content).try(:html_safe)%> </div>   
+        </td>
+              </tr>
+              <tr>
+                <td  ><%= image_tag "img1.jpg", :size => "330x36", :border => "0", :usemap => "#Map"%></td>
+              </tr>
+            </table>
+      </td>
+      </tr>
+      <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="88" align="right" valign="bottom" class="email_bg"  >
+          <table width="68%" border="0" align="right" cellpadding="0" cellspacing="0" >
+          <tr>
+          <td height="59" colspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="29" align="left" valign="top" >
+              <%= form_tag users_path  do %> 
+                <% text_field_tag  "user[email]","", :placeholder => "Your Email" %>
+              <%end%>
+            <td width="50" height="26" align="center" valign="middle" > 
+          <%= link_to image_tag("bt.png", :size => "11x17", :border => "0"), '#', :onclick => "$('form').submit();"%>  
+          </td>
+           </tr>
+        </table>
+            </td>
+        <td>&nbsp;</td>
+        <td>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+          <td width="132" ><img src="/assets/event_main.gif" width="132" height="88" /></td>
+          <td class="event_bg"> 
+                    
+                    <marquee bgcolor="#FFFFFF" scrollamount="2" direction="up" loop="true" width="400px"  height="70px"> 
+                    <%= Home.find_by_subject("Events").try(:content).try(:html_safe)%>
+                    
+                    </marquee>
+                    
+                    </td>
+          </tr>
+        </table>
+           </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>
+       <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="47"  class="leftboxtop">
+                <span class="leftboxtext" >How to Join</span>
+                </td>
+              </tr>
+              <tr >
+                <td class="leftboxmid" >
+         <div id="left_imgbox"> <img src="/assets/img2.jpg" width="67" height="114" align="right"/></div>  
+         <div id="left_textbox1"><%= Home.find_by_subject("How to Join").content.html_safe rescue nil%> </div>    
+        </td>
+              </tr>
+              <tr>
+                <td ><img src="/assets/leftbox_bot.png" width="330" height="36" border="0" usemap="#Map"  /></td>
+              </tr>
+            </table>
+      </td>
+        <td>&nbsp;</td>
+        <td align="left" valign="top">
+              <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="556" height="231" id="banner" align="middle">
+        <param name="movie" value="flash/banner.swf" />
+        <param name="quality" value="high" />
+        <param name="bgcolor" value="#ffffff" />
+        <param name="play" value="true" />
+        <param name="loop" value="true" />
+        <param name="wmode" value="transparent" />
+        <param name="scale" value="showall" />
+        <param name="menu" value="true" />
+        <param name="devicefont" value="false" />
+        <param name="salign" value="" />
+        <param name="allowScriptAccess" value="sameDomain" />
+        <!--[if !IE]>-->
+  <object type="application/x-shockwave-flash" data="flash/banner.swf" width="556" height="231">
+          <param name="movie" value="banner.swf" />
+          <param name="quality" value="high" />
+          <param name="bgcolor" value="#ffffff" />
+          <param name="play" value="true" />
+          <param name="loop" value="true" />
+          <param name="wmode" value="transparent" />
+          <param name="scale" value="showall" />
+          <param name="menu" value="true" />
+          <param name="devicefont" value="false" />
+          <param name="salign" value="" />
+          <param name="allowScriptAccess" value="sameDomain" />
+        <!--<![endif]-->
+          <a href="http://www.adobe.com/go/getflash">
+            <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+          </a>
+        <!--[if !IE]>-->
+        </object>
+        <!--<![endif]-->
+      </object>
+            </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+    <td class="bot_bg">&nbsp;</td>
+  </tr>
+</table>
+
+
+<map name="Map" id="map">
+  <area shape="rect" coords="227,15,313,30" href="#" />
+</map>
+
+<map name="Map2" id="map2">
+
+  <area shape="rect" coords="2,4,38,25" href="#" />
+  <area shape="rect" coords="64,3,104,24" href="#" />
+  <area shape="rect" coords="131,3,168,26" href="#" />
+  <area shape="rect" coords="194,1,232,27" href="#" />
+  <area shape="rect" coords="251,0,311,27" href="#" />
+</map>
+
+</body>
+</html>

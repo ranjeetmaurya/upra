@@ -1,0 +1,14 @@
+<table border="1">
+	<tr>
+		<th>subject</th>
+		<th>content</th>
+		<th>Action</th>
+	</tr>
+	<%@all_content.each do |content|%>
+		<tr>
+			<td><%= content.subject%></td>
+			<td><%= content.content%></td>
+			<td><%= link_to "Edit", edit_home_path(content)%></td>
+		</tr>
+	<%end%>
+</table>

@@ -1,0 +1,117 @@
+body{
+	background-image: url(../assets/main_bg.jpg);
+	background-repeat: no-repeat;
+	background-position:top;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;color:#666666;text-align:justify;
+     }
+.top_bg{
+    background-image: url(../assets/top_bg.png);
+	background-repeat:  repeat-x;
+	background-position:top;
+	}	
+#menu {
+	margin:0px; padding:0px;
+	right:0px;
+}	
+#menu a {
+	text-decoration:none;
+	color:#6b6b6b;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+   }
+#menu a.active,#menu a:hover {
+	color:#063;font-weight:bold;
+}
+#menu a:hover {
+	color:#333;
+}
+	
+	
+	
+	
+#div_dnttyps {
+ background:url(../assets/donate_bg.png) no-repeat ;
+  width:330px; height:42px;
+  margin-top:13px;	
+}
+.leftboxtop{
+    background:url(../assets/leftbox_top.png) no-repeat bottom;
+	width:330px;height:47px;margin-top:1px;
+   }
+.leftboxtext{
+	font-size: 15px;
+	font-weight: bold;
+	color: #093;
+	padding-left:10px;text-align:left;
+	}
+	
+.leftboxmid{
+background:url(../assets/leftbox_mid.png) repeat-y;
+}	
+.leftboxbot{
+background:url(../assets/leftbox_bot.png) no-repeat top;width:330px;height:36px;
+}	
+#left_textbox{
+ width:230px; height:160px;display:inline;
+ float:right;margin:10px;line-height:20px;	
+} 
+#left_textbox1{
+ width:230px; height:130px;display:inline;
+ float:right;margin:10px;line-height:20px;	
+} 
+#left_imgbox{
+ width:80px; height:114px;display:inline;
+  float:left;padding-top:25px;	
+} 
+.event_bg
+{
+background:url(../assets/event_bg.gif) no-repeat left;
+width:427px;
+}
+.email_bg
+{
+background:url(../assets/text_box.png) no-repeat left;
+width:330px; height:88px;
+}
+.bot_bg
+{
+background:url(../assets/bot_bg.jpg) repeat-x center;
+height:49px;
+}
+.contbox_mid
+{
+background:url(../assets/contbox_mid.png) repeat-y center;
+width:907px;
+}
+.head_text{
+   color:#333333;font-size:16px;font-weight:bold;	
+	}
+.head_text2{
+   color:#fe8401;font-size:16px;font-weight:bold;	
+	}	
+.hr
+{
+background:url(../assets/hr.jpg) repeat-x center;
+margin-top:10px;	
+}	
+.cont
+{
+font-size:14px;line-height:20px;font-family:Arial, Helvetica, sans-serif;text-align:justify;	
+}
+.names
+{
+font-family:Arial, Helvetica, sans-serif;font-size:14px;color:#0080C0;line-height:18px;
+}
+.cont #fm
+{
+ margin-left:22px; padding-left:10px;
+}
+.cont #fm li{ 
+padding-bottom:10px;padding-right:10px;
+}

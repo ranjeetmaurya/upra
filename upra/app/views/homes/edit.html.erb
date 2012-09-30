@@ -1,0 +1,7 @@
+<%= form_for @row do |f|%>
+	<%= f.label :subject, "Subject: "%>
+	<%= f.object.subject%>
+	<%= f.label :content%>
+	<%= f.text_area :content%>
+	<%= f.submit%>
+<%end%>

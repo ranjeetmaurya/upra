@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+
+-->
+</style>
+<link href="Css/Style_sheet.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="center" valign="top" class="top_bg">
+    <table width="907" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+      <td height="123" align="left" valign="middle">
+        <%= image_tag "logo.png", :size => "906x78", :border => "0" %>
+      </td>
+      </tr>
+      <tr>
+        <td height="61" valign="middle" style="background:url(/assets/menubg.png) no-repeat;height:61px;">
+      <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" id="menu">
+        <tr>
+        <td width="127" height="50" align="center"><a href="index.html" >Home</a></td>
+        <td width="2" align="center"><%= image_tag "sepr.png", :size => "1x30" %></td>
+        <td width="127" align="center"><%= link_to 'About us', about_us_homes_path %></td>
+        <td width="2" align="center"><%= image_tag "sepr.png", :size => "1x30" %></td>
+        <td width="127" align="center"><%= link_to 'Projects', projects_homes_path %></td>
+        <td width="2" align="center"><%= image_tag "sepr.png", :size => "1x30" %></td>
+        <td width="127" align="center"><a href="http://www.jagomumbairadio.com">Radio</a></td>
+        <td width="2" align="center"><%= image_tag "sepr.png", :size => "1x30" %></td>
+        <td width="127" align="center"><a href="News.html">News</a></td>
+        <td width="2" align="center"><%= image_tag "sepr.png", :size => "1x30" %></td>
+        <td width="127" align="center"><a href="Donations.html">Donations</a></td>
+        <td width="2" align="center"><%= image_tag "sepr.png", :size => "1x30" %></td>
+        <td width="127" align="center"><%= link_to 'Contact us',  contact_us_homes_path %></td>
+        
+        </tr>
+      </table>
+
+      </td>
+       </tr>
+      <tr>
+      <td align="center" valign="top" >
+             <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="center" valign="bottom"><%= image_tag "contbox_top.png", :size => "907x12", :border => "0" %></td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" class="contbox_mid" >
+                  <table width="880px" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <% @news.each do |value| %> 
+                      <tr>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td class="head_text2"><%= value.heading%></td>
+                      </tr>
+                      <tr>
+                        <td class="hr" height="15px">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td class="cont">
+                        <div style="float:right;width:200px;height:160px;"><%= image_tag "our_mis.jpg", :size => "180x155", :align => "right" %></div>
+                        <%= value.body%>
+                        </td>
+                    </tr> 
+                    <%end%>                                                                        
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top"><%= image_tag "contbox_bot.png", :size => "907x12", :border => "0" %></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+           </td>
+      </tr>
+      
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+    <td class="bot_bg">&nbsp;</td>
+  </tr>
+</table>
+
+
+<map name="Map" id="map">
+  <area shape="rect" coords="227,15,313,30" href="#" />
+</map>
+
+<map name="Map2" id="map2">
+
+  <area shape="rect" coords="2,4,38,25" href="#" />
+  <area shape="rect" coords="64,3,104,24" href="#" />
+  <area shape="rect" coords="131,3,168,26" href="#" />
+  <area shape="rect" coords="194,1,232,27" href="#" />
+  <area shape="rect" coords="251,0,311,27" href="#" />
+</map>
+
+</body>
+</html>
